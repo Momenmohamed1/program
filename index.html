@@ -1,75 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Sign</title>
+    <title>phone store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <header class="head">
-        <div class="navbar">
-            <div class="logo">Momen</div>
-            <div>
-                <a href="#">Home</a>
-                <a href="#">Server</a>
-                <a href="#">About As</a>
-                <a href="#">Rebort</a>
+    <div class="container">
+        <div class="photo1 bor">
+            <div><span>samsung A72</span></div>
+            <img src="images/download (1).jpeg" alt="">
+            <div class="input">
+                <button onclick="btnpls(this.id)" id="btnpls1">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+                <input type="number" name="" id="input1" placeholder="count">
+                <button  onclick="btnremov(this.id)" id="remov1">
+                    <span class="material-symbols-outlined">
+                        remove
+                    </span>
+                </button>
             </div>
         </div>
-    </header>
-    <div class="page">
-        <form>
-            <h1>Sign</h1>
+        <div class="photo2 bor">
+            <div><span>samsung A52s</span></div>
+            <img src="images/download.jpeg" alt="">
             <div class="input">
-                <label for="FristName">Frist Name :</label>
-                <input id="FristName" type="text" name="Fname" required placeholder="Enter Frist Name">
+                <button onclick="btnpls(this.id)" id="btnpls2">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+                <input type="number" name="" id="input2" placeholder="count">
+                <button onclick="btnremov(this.id)" id="remov2">
+                    <span class="material-symbols-outlined">
+                        remove
+                    </span>
+                </button>
             </div>
+        </div>
+        <div class="photo3 bor">
+            <div><span>samsung A52</span></div>
+            <img src="images/download (2).jpeg" alt="">
             <div class="input">
-                <label for="LastName">Last Name :</label>
-                <input id="LastName" type="text" name="Lname" required placeholder="Enter Last Name">
+                <button onclick="btnpls(this.id)" id="btnpls3">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+                <input type="number" name="" placeholder="count" id="input3">
+                <button onclick="btnremov(this.id)" id="remov3">
+                    <span class="material-symbols-outlined">
+                        remove
+                    </span>
+                </button>
             </div>
-            <div class="input , phone" >
-                <label for="phone">Phone :</label>
-                <input type="number" id="phone" name="Phone" required>
-            </div>
-            <div class="email , input">
-                <label for="email">email :</label>
-                <input type="email" id="email" placeholder="Enter email" name="Email" required>
-            </div>
-            <div class="password , input">
-                <label for="password">password :</label>
-                <input type="password" id="password" placeholder="Enter password" name="password" required>
-            </div>
-            <div class="re-password , input">
-                <label for="re-password">re-password :</label>
-                <input type="password" id="re-password" placeholder="Enter password" name="re-password" required>
-            </div>
-            <div class="male , checkbox">
-                <label for="male">Male :</label>
-                <input type="radio" id="male" name="male">
-            </div>
-            <div class="female , checkbox">
-                <label for="female">Female :</label>
-                <input type="radio" id="female" name="female">
-            </div>
-            <div class="student , checkbox">
-                <label for="student">Student :</label>
-                <input type="radio" id="student" name="student">
-            </div>
-            <div class="graduted , checkbox">
-                <label for="graduted">Graduted :</label>
-                <input type="radio" id="graduted" name="graduted">
-            </div>
-            <select class="select">
-                <option>Cairo</option>
-                <option>Alexandria</option>
-                <option>Marsa Matrouh</option>
-                <option>Hurghada</option>
-                <option>Fayoum</option>
-            </select>
-            <div class="submit">
-                <button type="submit">sign</button>
-            </div>
-        </form>
+            
+        </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
